@@ -1,0 +1,240 @@
+@font-face {
+  font-family: inter-regular;
+  src: url(../../../resources/fonts/inter/static/inter-regular.ttf);
+}
+
+@font-face {
+  font-family: inter-medium;
+  src: url(../../../resources/fonts/inter/static/inter-medium.ttf);
+}
+
+@font-face {
+  font-family: inter-semi-bold;
+  src: url(../../../resources/fonts/inter/static/Inter-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: inter-light;
+  src: url(../../../resources/fonts/inter/static/Inter-Light.ttf);
+}
+
+@font-face {
+  font-family: montserrat-medium;
+  src: url(../Fonts/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: montserrat-light;
+  src: url(../Fonts/static/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: montserrat-semi-bold;
+  src: url(../Fonts/static/Montserrat-SemiBold.ttf);
+}
+
+:root {
+  --border-color: grey;
+  --border-color-focus: rgb(32, 187, 193);
+  --border-shadow-color: rgb(14, 197, 203);
+  --background-image: url(../../resources/Assets/network.jpg);
+  --font-family-default: inter-regular;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-default);
+  background: linear-gradient(
+      to right,
+      rgba(23, 23, 23, 0.662),
+      rgba(59, 58, 58, 0.644)
+    ),
+    var(--background-image);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inter-medium;
+  margin: 0;
+  padding: 0;
+}
+
+/*Columns*/
+.col-6 {
+  width: 50% !important;
+}
+
+.col-5 {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  width: 28.9999993%;
+}
+
+/* display */
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+/* Justify */
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.test-form__container {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.test-form__cta {
+  color: white;
+  font-family: montserrat-semi-bold;
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+.test-form__intro-body {
+  margin-left: 3rem;
+}
+
+.test-form__intro-body h3,
+h5 {
+  color: white;
+  font-family: montserrat-medium;
+  margin-bottom: 0.5rem;
+}
+
+.test-form__intro-body p {
+  color: beige;
+  line-height: 1.2rem;
+  font-family: montserrat-medium;
+  text-align: center;
+}
+
+.test-form__heading {
+  white-space: nowrap;
+  color: cadetblue;
+  margin: 5rem 0rem 1rem;
+  font-family: inter-semi-bold;
+}
+
+.test-form__help-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.test-form__help-text h5 {
+  font-family: inter-light;
+  color: black;
+  margin-top: 0.1rem;
+}
+
+.test-form__help-text em {
+  font-style: normal;
+  color: cadetblue;
+  font-family: montserrat-medium;
+}
+
+.test-form__body {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin: 3rem 0rem;
+  padding: 2rem 2rem;
+  background-color: rgba(255, 255, 255, 0.884);
+}
+
+.test-form__row {
+  display: flex;
+  max-width: 100%;
+}
+
+.test-form__group {
+  margin: 0rem 1rem;
+}
+
+.test-form__group label {
+  margin-left: 3px;
+  font-family: inter-regular;
+}
+
+.test-form__group input,
+select {
+  margin-top: 9px;
+}
+
+.test-form__group > * {
+  box-sizing: content-box;
+  margin-left: -0.5em;
+}
+
+.test-form__input {
+  width: 100%;
+  box-sizing: content-box;
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid var(--border-color);
+  font-size: 17.5px;
+  font-family: inter-light;
+}
+
+select {
+  background-color: white;
+}
+
+.test-form__input:focus {
+  border: 1px solid var(--border-color-focus);
+  box-shadow: 0px 0px 2px var(--border-shadow-color);
+}
+
+.test-form__group button {
+  width: 100% !important;
+}
+
+.test-form__description-image {
+  width: 42px;
+  height: 42px;
+}
+
+.btn {
+  background-color: cadetblue;
+  color: white;
+  box-sizing: content-box;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 8px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+/* Margins */
+.mx-1 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-2 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mx-4 {
+  margin-left: 3.5rem;
+  margin-right: 0.5rem;
+}
